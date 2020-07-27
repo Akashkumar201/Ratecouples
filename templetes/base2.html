@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+</head>
+<style>
+    .red-square {
+        background-color: transparent;
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        
+      }
+      
+</style>
+
+<body bgcolor="#5EC2B7">
+    
+  <div class="red-square">
+      <img src="https://img.icons8.com/doodle/48/000000/winged-heart.png"/>
+      {% block content %}
+      
+      {% endblock  %}
+      <img src="https://img.icons8.com/doodle/48/000000/winged-heart.png"/>
+  </div>
+</body>
+</html>

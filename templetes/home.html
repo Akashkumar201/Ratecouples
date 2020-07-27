@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% block content %}
+<style>
+   
+    .find{
+        margin-bottom: 20%;
+    }
+    .form{
+        margin-left: 25%;
+        margin-top: 20%;
+    }
+</style>
+  
+<h1 class="find">Hey Folks  {{name}}</h1>
+<form class="form" action="add" method="post" >
+    {% csrf_token %}
+
+        <div class="form-row align-items-center">
+
+          <div class="col-sm-3 my-1">
+            <label class="sr-only" for="inlineFormInputGroupUsername">Username</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text"><img src="https://img.icons8.com/cute-clipart/64/000000/like.png"/></div>
+              </div>
+              <input type="text" name="num1" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username">
+            </div>
+          </div>
+          <div class="col-sm-3 my-1">
+            <label class="sr-only" for="inlineFormInputGroupUsername">Username</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text"><img src="https://img.icons8.com/cute-clipart/64/000000/like.png"/></div>
+              </div>
+              <input type="text" name="num2" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username">
+            </div>
+          </div>
+          <div class="col-auto my-1">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </form>
+</form>
+
+{% endblock  %}
+
