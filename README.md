@@ -1,4 +1,4 @@
-# FunWithPython
+# Ratecouples
 An Django based fun web for couple rating
 
 ## Getting Started
